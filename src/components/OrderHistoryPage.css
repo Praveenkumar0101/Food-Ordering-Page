@@ -1,0 +1,93 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  /* Order history container */
+  .order-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .order-item h4 {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .order-item ul {
+    padding-left: 20px;
+  }
+  
+  .order-item li {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .order-item p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .order-item strong {
+    color: #000;
+    font-size: 16px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 20px;
+  }
+  
+  /* Message when no orders are found */
+  .no-orders {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+  }
+  
+  /* Media queries for mobile responsiveness */
+  @media (max-width: 768px) {
+    .order-item {
+      padding: 15px;
+    }
+  
+    .order-item h3 {
+      font-size: 16px;
+    }
+  
+    .order-item h4 {
+      font-size: 14px;
+    }
+  
+    .order-item li, .order-item p, .order-item strong {
+      font-size: 13px;
+    }
+  }
+  

@@ -1,0 +1,161 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #555;
+}
+
+p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Order details form */
+.order-form {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.order-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.order-form label {
+  font-weight: bold;
+  color: #444;
+}
+
+.order-form button {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.order-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.order-form button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+/* Current order summary */
+.order-summary {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.order-summary div {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Menu item styles */
+.menu-item {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.menu-item img {
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.menu-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.menu-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.menu-item button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.menu-item button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-item img {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .order-form input {
+    font-size: 14px;
+  }
+
+  .order-form button {
+    font-size: 14px;
+  }
+
+  .menu-item h3 {
+    font-size: 16px;
+  }
+
+  .menu-item button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
